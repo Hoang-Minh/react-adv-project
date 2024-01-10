@@ -28,6 +28,7 @@ import NewEventPage from "./UI/NewEvent";
 import EditEventPage from "./UI/EditEvent";
 import RootLayout from "./UI/Root";
 import EventsRootLayout from "./UI/EventsRoot";
+import ErrorPage from "./UI/Error";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,7 @@ const router = createBrowserRouter([
       {
         path: "events",
         element: <EventsRootLayout />,
+        errorElement: <ErrorPage />,
         children: [
           {
             index: true,
