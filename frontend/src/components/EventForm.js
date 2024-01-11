@@ -46,7 +46,7 @@ function EventForm({ method, event }) {
           id="description"
           name="description"
           rows="5"
-          required-
+          required
           defaultValue={event ? event.description : ""}
         />
       </p>
